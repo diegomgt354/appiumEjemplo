@@ -1,0 +1,178 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 19,
+        "name": "Ingreso de cliente",
+        "description": "",
+        "id": "ingreso-al-aplicativo-taxi;ingreso-de-cliente;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15209046600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Ingresar al aplicativo",
+            "match": {
+              "location": "loginStep.ingresar_al_aplicativo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1387325900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Ir a tipo cliente",
+            "match": {
+              "location": "loginStep.ir_a_tipo_cliente()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2354688800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "seleccionar ya tengo cuenta",
+            "match": {
+              "location": "loginStep.seleccionar_ya_tengo_cuenta()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4074569400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Ingresar datos \"clienteprimero@gmail.com\" y \"1234567\" en login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "clienteprimero@gmail.com",
+                  "offset": 16
+                },
+                {
+                  "val": "1234567",
+                  "offset": 45
+                }
+              ],
+              "location": "loginStep.ingresar_datos_y_en_login(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1390459700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Ingresar",
+            "match": {
+              "location": "loginStep.ingresar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6977692300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "GPS en \"NO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NO",
+                  "offset": 8
+                }
+              ],
+              "location": "loginStep.GPS_en_activo(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3900984100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "ir a opcion Actualizar",
+            "match": {
+              "location": "loginStep.ir_a_opcion_Actualizar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8209294300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "actualizar datos cliente \"diego546\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "diego546",
+                  "offset": 26
+                }
+              ],
+              "location": "loginStep.actualizar_datos_cliente(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3119625800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Atras",
+            "match": {
+              "location": "loginStep.Atras()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Actualizar"
+          },
+          {
+            "line": 5,
+            "name": "@ActualizaconelusuarioCliente"
+          }
+        ]
+      }
+    ],
+    "name": "Ingreso al aplicativo taxi",
+    "description": "quiero poder ingresar al aplicativo taxiRara",
+    "id": "ingreso-al-aplicativo-taxi",
+    "keyword": "Feature",
+    "uri": "actualizacion.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Actualizar"
+      }
+    ]
+  }
+]

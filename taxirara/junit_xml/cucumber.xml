@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="46.623687">
+<testcase classname="Ingreso al aplicativo taxi" name="Ingreso de cliente" time="46.623687">
+<system-out><![CDATA[Given Ingresar al aplicativo................................................passed
+When Ir a tipo cliente......................................................passed
+And seleccionar ya tengo cuenta.............................................passed
+And Ingresar datos "clienteprimero@gmail.com" y "1234567" en login..........passed
+Then Ingresar...............................................................passed
+And GPS en "NO".............................................................passed
+And ir a opcion Actualizar..................................................passed
+And actualizar datos cliente "diego546".....................................passed
+And Atras...................................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

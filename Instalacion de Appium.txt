@@ -1,0 +1,37 @@
+Instalacion de Appium:
+01.- Descargar Java y agregar JAVA_HOME a variables de entorno y agregar a path %JAVA_HOME%\bin
+02.- Descargar Android Studio
+03.- Ingresar a android studio y crear cualquier proyecto y esperar a que cargue:
+	*"Tools"-"SDK Manager"-"SDK Tools"-desactivar "Hide Obsolete Packages"-seleccionar "Android SDK Tools(Obsolete)"-"Apply"-"OK"
+03.- Agrege a variables de entorno "C:\Users\<usuario>\AppData\Local\Android\Sdk" de nombre "ANDROID_HOME".
+	"C:\Users\diego\AppData\Local\Android\Sdk\tools\bin", "C:\Users\diego\AppData\Local\Android\Sdk\tools" y
+	"C:\Users\diego\AppData\Local\Android\Sdk\platform-tools" a patch
+04.- Ingresar a android studio y crear cualquier proyecto y esperar a que cargue:
+	*"Tools"-"AVD Manager"-"Create Virtual Device..."-selecciona la que tenga play store-"Next"-descarga un sistema android(diegoemulador)-"Finish"
+05.- Descargar e instalar Node.js y agregar NODE_HOME a variables de entorno y agregar npm (C:\Program Files\nodejs\node_modules\npm\bin) a patch
+	(aun que el instalador directamente agrega al path su ubicacion)
+si hay errores usa en cmd : "SET PATH=C:\Program Files\Nodejs;%PATH%"
+06.- Instalamos appium en "cmd" con el comando "npm install -g appium" (-g para que sea global, si no se pone se crea en la misma carpeta donde se digito el codigo)
+07.- Ejecutamos appium en "cmd" solo digitando "appium" y se inicia el servidor de appium (ya que usamos -g que es global se inicia de donde sea)
+08.- Descargar libreria appium java cliente (http://appium.io/downloads.html)-escoje java-descargar(hay varias alternativas como POM para maven,etc)
+09.- Descargar las librerias de selenium (https://www.selenium.dev/downloads/)
+10.- Descargar e instalar Eclipse (aunque tambien viene portable)
+
+
+--- ir a C:\Users\diego\AppData\Local\Android\Sdk\emulator   	-ejecutar: "emulator -avd <NAME_EMULADOR>"
+--- ir a C:\Users\diego\AppData\Local\Android\Sdk\tools\bin 	-ejecutar: "uiautomatorviewer" - adb kill-server - adb start-server
+
+emuladordiego
+emuladordiego2
+
+
+
+obs:
+si sale error -->  NoClassDefFoundError: org/apache/commons/lang3/StringUtils
+descarga "https://mvnrepository.com/artifact/org.apache.commons/commons-lang3/3.0"
+
+
+
+
+
+
